@@ -14,10 +14,20 @@ services:
             - db
         networks:
             - default
+        environment:
+            - MAIL_TYPE
+            - MAIL_ADDRESS
+            - MAIL_SMTP_HOST
+            - MAIL_SMTP_USER
+            - MAIL_SMTP_PW
+            - MAIL_SMTP_PORT
+            - MAIL_SMTP_AUTH
     db:
         image: mysql:8.0
-        ports: 
-            - "3306:3306"
+        #ports: 
+        #    - "3306:3306"
+        expose: 
+            - 3306
         command: --default-authentication-plugin=mysql_native_password
         environment:
             MYSQL_DATABASE: ep3bs
@@ -30,13 +40,13 @@ services:
             - ./volumes/mysql:/var/lib/mysql
         networks:
             - default
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        links: 
-            - db:db
-        ports:
-            - 8000:80
-        environment:
-            MYSQL_USER: ep3bs
-            MYSQL_PASSWORD: PuLf648YbAGq7B2m8H
-            MYSQL_ROOT_PASSWORD: siWPAgsGcq9jw2R5Qw 
+    # phpmyadmin:
+    #     image: phpmyadmin/phpmyadmin
+    #     links: 
+    #         - db:db
+    #     ports:
+    #         - 8000:80
+    #     environment:
+    #         MYSQL_USER: ep3bs
+    #         MYSQL_PASSWORD: PuLf648YbAGq7B2m8H
+    #         MYSQL_ROOT_PASSWORD: siWPAgsGcq9jw2R5Qw 

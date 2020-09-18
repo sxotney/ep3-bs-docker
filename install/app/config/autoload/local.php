@@ -16,16 +16,16 @@ return array(
         'port' => 3306,
     ),
     'mail' => array(
-        'type' => 'sendmail', // or 'smtp' or 'smtp-tls'
-        'address' => 'info@bookings.example.com',
+        'type' => $_ENV["MAIL_TYPE"], // 'sendmail', 'smtp' or 'smtp-tls'
+        'address' => $_ENV["MAIL_ADDRESS"], // info@bookings.example.com
             // Make sure 'bookings.example.com' matches the hosting domain when using type 'sendmail'
 
-        'host' => '?', // for 'smtp' type only, otherwise remove or leave as is
-        'user' => '?', // for 'smtp' type only, otherwise remove or leave as is
-        'pw' => '?', // for 'smtp' type only, otherwise remove or leave as is
+        'host' => $_ENV["MAIL_SMTP_HOST"], // for 'smtp' type only, otherwise remove or leave as is
+        'user' => $_ENV["MAIL_SMTP_USER"], // for 'smtp' type only, otherwise remove or leave as is
+        'pw'   => $_ENV["MAIL_SMTP_PW"], // for 'smtp' type only, otherwise remove or leave as is
 
-        'port' => 'auto', // for 'smtp' type only, otherwise remove or leave as is
-        'auth' => 'plain', // for 'smtp' type only, change this to 'login' if you have problems with SMTP authentication
+        'port' => $_ENV["MAIL_SMTP_PORT"], // for 'smtp' type only, otherwise remove or leave as is
+        'auth' => $_ENV["MAIL_SMTP_AUTH"], // for 'smtp' type only, change this to 'login' if you have problems with SMTP authentication
     ),
     'i18n' => array(
         'choice' => array(
