@@ -29,3 +29,6 @@ Run mysql client:
 
 - `docker-compose exec db mysql -u root -p` 
 
+## contribute
+
+This repository is work in progress, please open a PR if you have improvements. The Dockerfile could definitely get optimized.
