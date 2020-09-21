@@ -2,20 +2,22 @@
 
 based on lamp stack https://github.com/jcavat/docker-lamp
 
-## setup
+## setup ep3-bs
 
-0. get ep3-bs `git submodule init`
-1. copy .env.example to .env and add your mail settings
-2. build `docker-compose build`
-3. run `docker-compose up`
+Clone this repository, cd into it, then:
 
-Open web browser [http://localhost:8001](http://localhost:8001)
+1. get ep3-bs files `git submodule init & git submodule update`
+2. copy .env.example to .env `cp .env.example .env`
+3. (optional) and add your mail settings to `.env`
+3. build container `docker-compose build`
+4. run `docker-compose up`
+5. Open web browser at [http://localhost:8001](http://localhost:8001)
 
 ### file structure
 
 - `app` - ep3-bs repository as a git submodule
 - `install` – customized config files that get copied over the original files
-- `volumes` - persistent files mounted by docker, created at first run. all your important files, including the database, are here.
+- `volumes` - persistent files mounted by docker, created at first run. all your important files, including the database, appear here.
 - `.env.example` - example for runtime variables .env
 
 ### phpmyadmin
