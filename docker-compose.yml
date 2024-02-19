@@ -1,9 +1,5 @@
-
 version: "3.1"
 volumes:
-    db_data: {}
-    db_conf: {}
-    db_dump: {}
     app: {}
 services:
     app:
@@ -12,15 +8,3 @@ services:
             - "80:80"
         volumes:
             - app:/var/www/html/
-        links:
-            - db
-    db:
-        image: mysql:8.3
-        ports:
-            - "3306:3306"
-        command: --authentication_policy=caching_sha2_password --skip-performance-schema --skip-mysqlx
-        volumes:
-            - db_dump:/docker-entrypoint-initdb.d
-            - db_conf:/etc/mysql/conf.d
-            - db_data:/var/lib/mysql
-
