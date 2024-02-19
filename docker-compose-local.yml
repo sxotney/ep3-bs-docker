@@ -1,0 +1,53 @@
+version: "3.1"
+volumes:
+    db_data: {}
+    db_conf: {}
+    db_dump: {}
+    smtp4dev-data: {}
+    app: {}
+services:
+    app:
+        build: .
+        ports:
+            - "8001:80"
+        volumes:
+            - app:/var/www/html/
+        links:
+            - db
+        networks:
+            - default
+        env_file: .env
+    db:
+        image: mysql:8.3
+        ports:
+            - "3306:3306"
+        expose:
+            - 3306
+        command: --authentication_policy=caching_sha2_password
+        env_file: .env
+        volumes:
+            - db_dump:/docker-entrypoint-initdb.d
+            - db_conf:/etc/mysql/conf.d
+            - db_data:/var/lib/mysql
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db:db
+        ports:
+            - 8000:80
+        env_file: .env
+    smtp4dev:
+        image: rnwood/smtp4dev:v3
+        restart: always
+        networks:
+            - default
+        ports:
+            - '3000:80'
+            - '25:25'
+            - '143:143'
+        volumes:
+            - smtp4dev-data:/smtp4dev
+        environment:
+            - ServerOptions__HostName=smtp4dev
