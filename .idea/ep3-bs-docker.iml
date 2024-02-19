@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Config/src" isTestSource="false" packagePrefix="Zend\Config\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Crypt/src" isTestSource="false" packagePrefix="Zend\Crypt\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Db/src" isTestSource="false" packagePrefix="Zend\Db\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Escaper/src" isTestSource="false" packagePrefix="Zend\Escaper\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/EventManager/src" isTestSource="false" packagePrefix="Zend\EventManager\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Filter/src" isTestSource="false" packagePrefix="Zend\Filter\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Form/src" isTestSource="false" packagePrefix="Zend\Form\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Http/src" isTestSource="false" packagePrefix="Zend\Http\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Hydrator/src" isTestSource="false" packagePrefix="Zend\Hydrator\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/I18n/src" isTestSource="false" packagePrefix="Zend\I18n\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/InputFilter/src" isTestSource="false" packagePrefix="Zend\InputFilter\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Json/src" isTestSource="false" packagePrefix="Zend\Json\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Loader/src" isTestSource="false" packagePrefix="Zend\Loader\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Mail/src" isTestSource="false" packagePrefix="Zend\Mail\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Math/src" isTestSource="false" packagePrefix="Zend\Math\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Mime/src" isTestSource="false" packagePrefix="Zend\Mime\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/ModuleManager/src" isTestSource="false" packagePrefix="Zend\ModuleManager\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Mvc/src" isTestSource="false" packagePrefix="Zend\Mvc\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Serializer/src" isTestSource="false" packagePrefix="Zend\Serializer\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/ServiceManager/src" isTestSource="false" packagePrefix="Zend\ServiceManager\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Session/src" isTestSource="false" packagePrefix="Zend\Session\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Stdlib/src" isTestSource="false" packagePrefix="Zend\Stdlib\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Uri/src" isTestSource="false" packagePrefix="Zend\Uri\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Validator/src" isTestSource="false" packagePrefix="Zend\Validator\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/View/src" isTestSource="false" packagePrefix="Zend\View\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/module/User/test/UserTest" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/app/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/app/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/container-interop/container-interop" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/true/punycode" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-authentication" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-code" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-console" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-di" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-diactoros" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-escaper" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-eventmanager" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-file" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-i18n-resources" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-json" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-log" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-servicemanager" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-stdlib" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/zendframework/zend-version" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

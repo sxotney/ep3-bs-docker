@@ -1,0 +1,20 @@
+apiVersion: v1
+data:
+  MAIL_ADDRESS: 'info@smtp4dev'
+  MAIL_SMTP_AUTH: 'plain'
+  MAIL_SMTP_HOST: 'smtp4dev'
+  MAIL_SMTP_PORT: '25'
+  MAIL_SMTP_PW: '?'
+  MAIL_SMTP_USER: '?'
+  MAIL_TYPE: 'smtp'
+  MYSQL_DATABASE: 'ep3bs'
+  MYSQL_PASSWORD: 'acde12345678922'
+  MYSQL_ROOT_PASSWORD: 'abcdefg123ZZZ'
+  MYSQL_USER: 'ep3bsuser'
+  APACHE_DOCUMENT_ROOT: '/var/www/html/public'
+kind: ConfigMap
+metadata:
+  labels:
+    io.kompose.service: app-env
+  name: env
+  namespace: ssa

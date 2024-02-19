@@ -10,7 +10,7 @@
  *
  * Should be true during initial testing and false when actually using the system.
  */
-define('EP3_BS_DEV_TAG', true);
+define('EP3_BS_DEV_TAG', false);
 
 /**
  * Timezone of the people using the system
@@ -18,7 +18,7 @@ define('EP3_BS_DEV_TAG', true);
  * An overview of available timezones can be found here:
  * http://php.net/manual/en/timezones.php
  */
-ini_set('date.timezone', 'Europe/Berlin');
+ini_set('date.timezone', 'Europe/London');
 
 
 

@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+  name: app
+  namespace: ssa
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: smtp4dev.thescotneys.com
+      http:
+        paths:
+          - backend:
+              service:
+                name: smtp4dev
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
+    - host: booking.thescotneys.com
+      http:
+        paths:
+          - backend:
+              service:
+                name: app-service
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
+  tls:
+    - hosts:
+        - booking.thescotneys.com
+      secretName: booking.thescotneys.com-tls
+    - hosts:
+        - smtp4dev.thescotneys.com
+      secretName: smtp4dev.thescotneys.com-tls

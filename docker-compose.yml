@@ -1,52 +1,54 @@
 version: "3.1"
+volumes:
+    db_data: {}
+    db_conf: {}
+    db_dump: {}
+    smtp4dev-data: {}
+    app: {}
 services:
     app:
         build: .
         ports: 
             - "8001:80"
         volumes:
-         #- ./app:/var/www/html/
-          - ./volumes/app/data/backup:/var/www/html/data/backup/
-          - ./volumes/app/public/docs-client:/var/www/html/public/docs-client/
-          - ./volumes/app/public/imgs-client:/var/www/html/public/imgs-client/
-          - ./volumes/app/public/misc-client:/var/www/html/public/misc-client/          
+          - app:/var/www/html/
         links:
             - db
         networks:
             - default
-        environment:
-            - MAIL_TYPE
-            - MAIL_ADDRESS
-            - MAIL_SMTP_HOST
-            - MAIL_SMTP_USER
-            - MAIL_SMTP_PW
-            - MAIL_SMTP_PORT
-            - MAIL_SMTP_AUTH
+        env_file: .env
     db:
-        image: mysql:8.0
-        #ports: 
-        #    - "3306:3306"
+        image: mysql:8.3
+        ports:
+           - "3306:3306"
         expose: 
             - 3306
-        command: --default-authentication-plugin=mysql_native_password
-        environment:
-            MYSQL_DATABASE: ep3bs
-            MYSQL_USER: ep3bs
-            MYSQL_PASSWORD: PuLf648YbAGq7B2m8H
-            MYSQL_ROOT_PASSWORD: siWPAgsGcq9jw2R5Qw
+        command: --authentication_policy=caching_sha2_password
+        env_file: .env
         volumes:
-            #- ./dump:/docker-entrypoint-initdb.d
-            #- ./conf:/etc/mysql/conf.d
-            - ./volumes/mysql:/var/lib/mysql
+            - db_dump:/docker-entrypoint-initdb.d
+            - db_conf:/etc/mysql/conf.d
+            - db_data:/var/lib/mysql
         networks:
             - default
-    # phpmyadmin:
-    #     image: phpmyadmin/phpmyadmin
-    #     links: 
-    #         - db:db
-    #     ports:
-    #         - 8000:80
-    #     environment:
-    #         MYSQL_USER: ep3bs
-    #         MYSQL_PASSWORD: PuLf648YbAGq7B2m8H
-    #         MYSQL_ROOT_PASSWORD: siWPAgsGcq9jw2R5Qw 
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db:db
+        ports:
+            - 8000:80
+        env_file: .env
+    smtp4dev:
+        image: rnwood/smtp4dev:v3
+        restart: always
+        networks:
+            - default
+        ports:
+        - '3000:80'
+        - '25:25'
+        - '143:143'
+        volumes:
+            - smtp4dev-data:/smtp4dev
+        environment:
+        - ServerOptions__HostName=smtp4dev
+

@@ -8,9 +8,9 @@
 
 return array(
     'db' => array(
-        'database' => 'ep3bs',
-        'username' => 'ep3bs',
-        'password' => 'PuLf648YbAGq7B2m8H',
+        'database' => $_ENV["MYSQL_DATABASE"],
+        'username' => $_ENV["MYSQL_USER"],
+        'password' => $_ENV["MYSQL_PASSWORD"],
 
         'hostname' => 'db',
         'port' => 3306,
@@ -29,19 +29,18 @@ return array(
     ),
     'i18n' => array(
         'choice' => array(
-            'en-US' => 'English',
-            'de-DE' => 'Deutsch',
+            'en-GB' => 'English',
 
             // More possible languages:
             // 'fr-FR' => 'Français',
             // 'hu-HU' => 'Magyar',
         ),
 
-        'currency' => 'EUR',
+        'currency' => 'GBP',
 
         // The language is usually detected from the user's web browser.
         // If it cannot be detected automatically and there is no cookie from a manual language selection,
         // the following locale will be used as the default "fallback":
-        'locale' => 'de-DE',
+        'locale' => 'en-GB',
     ),
 );
