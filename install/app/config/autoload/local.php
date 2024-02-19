@@ -12,7 +12,7 @@ return array(
         'username' => $_ENV["MYSQL_USER"],
         'password' => $_ENV["MYSQL_PASSWORD"],
 
-        'hostname' => 'db',
+        'hostname' => $_ENV["DATABASE_URL"],
         'port' => 3306,
     ),
     'mail' => array(
