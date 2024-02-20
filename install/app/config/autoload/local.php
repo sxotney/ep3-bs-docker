@@ -13,7 +13,7 @@ return array(
         'password' => $_ENV["MYSQL_PASSWORD"],
 
         'hostname' => $_ENV["DATABASE_URL"],
-        'port' => 3306,
+        'port' => $_ENV["DATABASE_PORT"],
     ),
     'mail' => array(
         'type' => $_ENV["MAIL_TYPE"], // 'sendmail', 'smtp' or 'smtp-tls'
