@@ -18,8 +18,8 @@ RUN docker-php-ext-enable intl
 RUN a2enmod rewrite
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
-
 COPY app /var/www/html
+
 RUN cd /var/www/html/
 RUN composer update --ignore-platform-reqs
 RUN composer install --ignore-platform-reqs
