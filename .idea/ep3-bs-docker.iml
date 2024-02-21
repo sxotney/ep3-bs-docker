@@ -27,9 +27,6 @@
       <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Uri/src" isTestSource="false" packagePrefix="Zend\Uri\" />
       <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/Validator/src" isTestSource="false" packagePrefix="Zend\Validator\" />
       <sourceFolder url="file://$MODULE_DIR$/app/src/Zend/View/src" isTestSource="false" packagePrefix="Zend\View\" />
-      <sourceFolder url="file://$MODULE_DIR$/app/module/User/test/UserTest" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/app/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/app/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/composer" />
