@@ -10,7 +10,7 @@
  *
  * Should be true during initial testing and false when actually using the system.
  */
-define('EP3_BS_DEV_TAG', false);
+define('EP3_BS_DEV_TAG', strtolower($_ENV["EP3_BS_DEV"] === "true"));
 
 /**
  * Timezone of the people using the system
