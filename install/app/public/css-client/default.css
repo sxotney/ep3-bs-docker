@@ -3,71 +3,92 @@ h2, h3, h4, h5, h6 { color: #547B97; }
 /* Layout - Calendar */
 
 a.cc-event:link,
-a.cc-event:visited { background-color: #975459; }
-a.cc-event:hover { background-color: #6A3333; }
+a.cc-event:visited { background-color: #000; }
+a.cc-event:hover { background-color: #1111; }
+
+.cc-over { cursor: default; color: #FFF; background-color: #FFF; }
+
+a.cc-free:link,
+a.cc-free:visited { opacity: 1.0; color: #FFF; background-color: #8BB243; }
+a.cc-free:hover { background-color: #5F8024; }
 
 a.cc-own:link,
-a.cc-own:visited { background-color: #8BB243; }
-a.cc-own:hover { background-color: #5F8024; }
+a.cc-own:visited { background-color: #F19CBB; }
+a.cc-own:hover { background-color: #C4708F; }
 
 a.cc-single:link,
 a.cc-single:visited { background-color: #808D96; }
 a.cc-single:hover { background-color: #4C5359; }
 
 a.cc-multiple:link,
-a.cc-multiple:visited { background-color: #547B97; }
-a.cc-multiple:hover { background-color: #334F6A; }
+a.cc-multiple:visited { background-color: #3B36A8; }
+a.cc-multiple:hover { background-color: #2A2678; }
 
 a.cc-conflict:link,
-a.cc-conflict:visited { background-color: #334F6A; }
-a.cc-conflict:hover { background-color: #334F6A; }
+a.cc-conflict:visited { background-color: #FF0000; }
+a.cc-conflict:hover { background-color: #B30000; }
 
 /* Layout - Alternate Calendar */
 
 .cc-range-member a {
-    border-color: #547B97 !important;
-    background-color: #547B97 !important;
+    border-color: #7A7A7A !important;
+    background-color: #7A7A7A !important;
 }
+
+
 
 /* General Purpose - Classes */
 
 .my-highlight { color: #5F8024; }
 
-.badge { background-color: #547B97; }
-.badge-label { color: #547B97; }
+.badge { background-color: #7A7A7A; }
+.badge-label { color: #7A7A7A; }
 
 /* Links */
 
-a:link, a:visited { color: #334F6A; }
+a:link, a:visited { color: #7A7A7A; }
 
 #footer a:link, #footer a:visited {
-    color: #FFF;
+    color: #7A7A7A;
     text-decoration: none;
 }
 
 #footer {
-    color:  #FFF;
+    color:  #7A7A7A;
 
 }
 
 #footer a:hover {
-    border-bottom: solid 1px #FFF;
+    border-bottom: solid 1px #7A7A7A;
 }
 
 #label {
-    background: #333;
+    background: #7A7A7A;
 }
 
 #branding {
-    color: #FFF;
+    color: #7A7A7A;
 }
 
 #branding a:link, #branding a:visited {
-    color: #FFF;
+    color: #7A7A7A;
 }
 
-#topbar-separator { background: #FFF; }
+#topbar-separator { background: #7A7A7A; }
+
+#topbar-contact{
+    background-image: none;
+}
 
 #label-client {
-    color: #FFF
+    color: #7A7A7A
 }
+
+body {
+    background-color: #FFF;
+    background-image: none;
+    color:#7A7A7A;
+}
+
+
+.links-forth ul { color: #7A7A7A; }
