@@ -3,14 +3,14 @@ h2, h3, h4, h5, h6 { color: #547B97; }
 /* Layout - Calendar */
 
 a.cc-event:link,
-a.cc-event:visited { background-color: #000; }
-a.cc-event:hover { background-color: #1111; }
+a.cc-event:visited { background-color: #FF0000; }
+a.cc-event:hover { background-color: #B30000; }
 
 .cc-over { cursor: default; color: #FFF; background-color: #FFF; }
 
 a.cc-free:link,
-a.cc-free:visited { opacity: 1.0; color: #FFF; background-color: #8BB243; }
-a.cc-free:hover { background-color: #5F8024; }
+a.cc-free:visited { opacity: 1.0; color: #FFF; background-color: #61CE70; }
+a.cc-free:hover { background-color: #34a843; }
 
 a.cc-own:link,
 a.cc-own:visited { background-color: #F19CBB; }
@@ -21,8 +21,8 @@ a.cc-single:visited { background-color: #808D96; }
 a.cc-single:hover { background-color: #4C5359; }
 
 a.cc-multiple:link,
-a.cc-multiple:visited { background-color: #3B36A8; }
-a.cc-multiple:hover { background-color: #2A2678; }
+a.cc-multiple:visited { background-color: #F19CBB; }
+a.cc-multiple:hover { background-color: #C4708F; }
 
 a.cc-conflict:link,
 a.cc-conflict:visited { background-color: #FF0000; }
@@ -41,54 +41,72 @@ a.cc-conflict:hover { background-color: #B30000; }
 
 .my-highlight { color: #5F8024; }
 
-.badge { background-color: #7A7A7A; }
-.badge-label { color: #7A7A7A; }
+.badge { background-color: #54595F; }
+.badge-label { color: #54595F; }
 
 /* Links */
 
-a:link, a:visited { color: #7A7A7A; }
+a:link, a:visited { color: #54595F; }
 
 #footer a:link, #footer a:visited {
-    color: #7A7A7A;
+    color: #54595F;
     text-decoration: none;
 }
 
 #footer {
-    color:  #7A7A7A;
+    color:  #54595F;
 
 }
 
 #footer a:hover {
-    border-bottom: solid 1px #7A7A7A;
+    border-bottom: solid 1px #54595F;
 }
 
 #label {
-    background: #7A7A7A;
+    background: #54595F;
 }
 
 #branding {
-    color: #7A7A7A;
+    color: #54595F;
 }
 
 #branding a:link, #branding a:visited {
-    color: #7A7A7A;
+    color: #54595F;
 }
 
-#topbar-separator { background: #7A7A7A; }
+#topbar-separator { background: #54595F; }
 
 #topbar-contact{
     background-image: none;
 }
 
 #label-client {
-    color: #7A7A7A
+    color: #54595F;
+    font-family: "Verdana", sans-serif;
+
 }
+
+#label-service {
+    font-family: "Verdana", sans-serif;
+
+}
+
+.large-text { font-family: Arial, sans-serif; }
+
 
 body {
-    background-color: #FFF;
+    background-color: #C0C0C0;
     background-image: none;
-    color:#7A7A7A;
+    color:#54595F;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: "Verdana", sans-serif;
+
 }
 
 
-.links-forth ul { color: #7A7A7A; }
+
+.links-forth ul { color: #54595F; }
