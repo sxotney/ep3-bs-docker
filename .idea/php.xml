@@ -38,6 +38,7 @@
       <path value="$PROJECT_DIR$/app/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/app/vendor/true/punycode" />
       <path value="$PROJECT_DIR$/app/vendor/zendframework/zend-di" />
+      <path value="$PROJECT_DIR$/app/vendor/eluceo/ical" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />

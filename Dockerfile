@@ -7,6 +7,7 @@ RUN apt-get update -y \
     && apt-get install -y git build-essential autoconf file pkg-config re2c python3 \
     && rm -rf /var/lib/apt/lists/*
 
+RUN pecl install xdebug && docker-php-ext-enable xdebug
 RUN docker-php-ext-install zip
 RUN docker-php-ext-configure intl && docker-php-ext-install intl 
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
